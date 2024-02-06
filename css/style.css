@@ -1,15 +1,79 @@
 *{
 	padding:0;
 	margin:0;
-	min-height: 3em;
+	
 }
 header{
-	background-color:blue;
-	height: 4em;
+	background-color:rgb(214, 159, 171);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding:0 2%;
+}
+header button{
+	background-color: transparent;
+	border: transparent;
+}
+header button img{
+	height:2em;
+	cursor: pointer;
+}
+
+/*"css du logo je n'arrive pas à ajuster la taille 
+sans changer les autres images"
+
+header a img:first-of-type{
+	height: 5em;
+}
+*/
+header a img{
+	height: 2.5em;
+	width: 100%;
+}
+nav {
+	background-color: purple;
+	width: 20%;
+	display: none;
+}
+
+header select{
+	width: 15%;
+	background-color: rgb(207, 167, 176);
+	height: 2em;
+	margin: 0.5% 0 0 0;
+	color: #fff;
+	border-radius: 5px;
 }
 main {
-	background-color: black;
-	height: 35em;
+	height: 39em;
+}
+main img{
+	height: 39em;
+	width: 100%;
+}
+
+#nav{
+	text-decoration: none;
+	position: relative;
+	margin: 1% 0 0 0;
+	color: #fff;
+}
+main button{
+	background-color: rgba(234, 133, 163, 0.468);
+	width: 10%;
+	color: white;
+	position: relative;
+	bottom: 20%;
+	left: 45%;
+	font-size: 1.5em;
+	height: 7%;
+	cursor: pointer;
+	border-radius: 8px;
+}
+
+main button:hover{
+	background-color:rgb(234, 133, 163);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
 section {
 	background-color: aqua;
