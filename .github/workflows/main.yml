@@ -1,4 +1,4 @@
-name: CI/CD Pipeline
+name: CI for HTML/CSS
 
 on:
   push:
@@ -7,22 +7,17 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  check-html-css:
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v3
-    - name: Use Node.js 20
-      uses: actions/setup-node@v3  
-      with:
-        node-version: '20'
-        cache: 'npm'
+    
+    - name: Check for HTML and CSS files
+      run: |
+        if ls *.html &>/dev/null && ls *.css &>/dev/null; then
+          echo "HTML and CSS files found."
+        else
+          echo "HTML or CSS files not found." && exit 1
+        fi
 
-    - name: Install Dependencies
-      run: npm install
-
-    - name: Run Tests
-      run: npm test
-
-    - name: Build
-      run: npm run build
