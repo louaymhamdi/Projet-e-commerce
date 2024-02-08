@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Lora:wght@500 & display=swap');
 *{
 	padding:0;
 	margin:0;
-	
 }
 header{
-	background-color:rgb(214, 159, 171);
+	background-color:rgb(224, 113, 150);
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -38,17 +39,17 @@ nav {
 
 header select{
 	width: 15%;
-	background-color: rgb(207, 167, 176);
+	background-color: rgb(217, 113, 165);
 	height: 2em;
 	margin: 0.5% 0 0 0;
 	color: #fff;
 	border-radius: 5px;
 }
 main {
-	height: 39em;
+	height: 45em;
 }
 main img{
-	height: 39em;
+	height: 100%;
 	width: 100%;
 }
 
@@ -59,7 +60,7 @@ main img{
 	color: #fff;
 }
 main button{
-	background-color: rgba(234, 133, 163, 0.468);
+	background-color: rgba(217, 113, 165, 0.484);
 	width: 10%;
 	color: white;
 	position: relative;
@@ -72,8 +73,73 @@ main button{
 }
 
 main button:hover{
-	background-color:rgb(234, 133, 163);
+	background-color:rgb(217, 113, 165);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+aside:first-of-type{
+	width: 100%;
+  	height: 100%;
+	display: none; /*css de la barre défilante à faire*/
+}
+
+section:first-of-type{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0 2% 2% 2%;
+	background-color: rgb(246, 228, 233);
+	height: 100%;
+}
+section:first-of-type h1{
+	width: 100%;
+	text-align: center;
+	font-family:'Playfair Display', serif;
+	font-size: 3rem;
+	padding: 1% 0;
+}
+section:first-of-type article{
+	width: 30%;
+}
+section:first-of-type article img{
+	height: 28em;
+	width: 100%;
+}
+section:first-of-type h2,
+section:first-of-type p,
+section:first-of-type div{
+	text-align: center;
+}
+section:first-of-type h2,
+section:first-of-type p{
+	color: #333;
+}
+section:first-of-type h2{
+	font-size: 2rem;
+	font-weight: 200;
+}
+section:first-of-type p{
+	font-style: italic;
+	font-size: 1rem;
+}
+section:first-of-type span{
+	color: gold;
+	font-size: 1.5rem;
+}
+#fourstar{
+	color: black;
+}
+section:first-of-type button{
+	color: #fff;
+	background-color:rgb(217, 113, 165);
+	width: 35%;
+	height: 2em;
+	border-radius: 5px;
+	margin-top: 2%;
+	font-size: 1rem;
+}
+section:first-of-type button:hover{
+	background-color: rgb(244, 178, 200);
+	color: #333;
 }
 section {
 	background-color: aqua;
