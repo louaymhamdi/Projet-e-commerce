@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-/* Helper variables */
 :root {
   --bg: #ffffff;
   --gray1: #333333;
@@ -10,7 +9,6 @@
   --gray4: #f2f2f2;
   --orange: #f2994a;
 }
-/* REset */
 *,
 *::before,
 *::after {
@@ -19,13 +17,11 @@
   padding: 0;
 }
 
-/* Body style */
 body {
   font-family: 'Montserrat', sans-serif;
   width: 100%;
   height: 100vh;
 }
-/* Container - entire page content */
 .container {
   height: 100%;
   max-width: 900px;
@@ -36,7 +32,6 @@ body {
   align-items: center;
 }
 
-/* HEADER */
 .header {
   margin: 2rem 0 2rem 0;
 }
@@ -44,13 +39,11 @@ body {
   font-weight: 600;
   font-size: 2.25rem;
 }
-/* MAIN */
 .main {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
-/* form section */
 .form-section {
   display: flex;
   flex-direction: column;
@@ -123,7 +116,6 @@ button {
   border-radius: 0.6rem;
 }
 
-/* cart section */
 .cart-section {
   background-color: var(--gray4);
   padding: 1rem;
@@ -208,7 +200,6 @@ button {
   font-size: 1rem;
   font-weight: 600;
 }
-/* FOOTER */
 .footer-top {
     background: var(--cultured);
     padding-block: var(--section-padding);
@@ -325,25 +316,14 @@ button {
   
   
   
-  /*-----------------------------------*\
-   * #MEDIA QUARIES
-  \*-----------------------------------*/
-  
-  /**
-   * responsive for larger than 480px screen
-   */
+ 
   
   @media (min-width: 480px) {
   
-    /**
-     * CUSTOM PROPERTY
-     */
   
     :root {
   
-      /**
-       * typography
-       */
+     
   
       --fs-1: 3rem;
       --fs-2: 2rem;
@@ -352,25 +332,16 @@ button {
   
   
   
-    /**
-     * CATEGORY
-     */
   
     .category-list > li { width: calc(50% - 15px); }
   
   
   
-    /**
-     * PRODUCT
-     */
   
     .product-list > li { width: calc(50% - 12.5px); }
   
   
   
-    /**
-     * FOOTER
-     */
   
     .footer-brand { width: 100%; }
   
@@ -399,10 +370,7 @@ button {
     }
   
   
-  
-    /**
-     * REUSED STYLE
-     */
+ 
   
     .container {
       max-width: 550px;
@@ -436,9 +404,6 @@ button {
   
   
   
-    /**
-     * NEWSLETTER
-     */
   
     .newsletter-card > * {
       max-width: 480px;
@@ -461,9 +426,7 @@ button {
   
   
   
-    /**
-     * FOOTER
-     */
+    
   
     .footer-list { width: calc(33.33% - 26.66px); }
   
@@ -485,15 +448,10 @@ button {
   
   @media (min-width: 992px) {
   
-    /**
-     * CUSTOM PROPERTY
-     */
+    
   
     :root {
   
-      /**
-       * typography
-       */
   
       --fs-1: 5rem;
   
@@ -501,25 +459,18 @@ button {
   
   
   
-    /**
-     * RESET
-     */
+    
   
     body { padding-block: 0; }
   
   
   
-    /**
-     * REUSED STYLE
-     */
   
     .container { max-width: 950px; }
   
   
   
-    /**
-     * HEADER
-     */
+    
   
     .header {
       position: relative;
@@ -615,17 +566,12 @@ button {
   
   
   
-    /**
-     * CATEGORY
-     */
   
     .category-list > li:not(:first-child, :nth-child(2)) { width: calc(25% - 22.5px); }
   
   
   
-    /**
-     * PRODUCT
-     */
+    
   
     .product-list > li { width: calc(33.33% - 16.66px); }
   
@@ -652,17 +598,12 @@ button {
   
   
   
-    /**
-     * BLOG
-     */
   
     .blog-list > li { width: calc(33.33% - 20px); }
   
   
   
-    /**
-     * NEWSLETTER
-     */
+    
   
     .newsletter-card .card-form { max-width: 650px; }
   
@@ -671,22 +612,14 @@ button {
   
   
   
-  
-  /**
-   * responsive for larger than 1200px screen
-   */
+ 
   
   @media (min-width: 1200px) {
   
-    /**
-     * CUSTOM PROPERTY
-     */
-  
+    
     :root {
   
-      /**
-       * typography
-       */
+      
   
       --fs-1: 6.25rem;
   
@@ -694,34 +627,25 @@ button {
   
   
   
-    /**
-     * REUSED STYLE
-     */
+    
   
     .container { max-width: 1150px; }
   
   
   
-    /**
-     * HEADER
-     */
+   
   
     .header-search .input-field { width: 350px; }
   
   
   
-    /**
-     * PRODUCT
-     */
+   
   
     .product-list > li { width: calc(25% - 18.75px); }
   
   
   
-    /**
-     * FOOTER
-     */
-  
+   
     .footer-brand { width: calc(40% - 30px); }
   
     .footer-text { max-width: 340px; }

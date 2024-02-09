@@ -1,8 +1,6 @@
 'use strict';
 
-/**
- * navbar toggle
- */
+
 
 const overlay = document.querySelector("[data-overlay]");
 const navOpenBtn = document.querySelector("[data-nav-open-btn]");
@@ -28,14 +26,12 @@ window.addEventListener("scroll", function () {
     : header.classList.remove("active");
 })
 document.addEventListener('DOMContentLoaded', function() {
-  // Load the header
   fetch('./header.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('header-placeholder').innerHTML = data;
     });
 
-  // Load the footer
   fetch('./footer.html')
     .then(response => response.text())
     .then(data => {

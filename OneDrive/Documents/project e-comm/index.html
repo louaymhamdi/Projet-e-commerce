@@ -87,13 +87,16 @@
 
         <ul class="navbar-list">
 
+          <section id="home">
+            <li>
+              <a href="#home" class="navbar-link">Accueil</a>
+            </li>
+                      </section>
+          
           <li>
-            <a href="#home" class="navbar-link">Accueil</a>
+            <a href="boutique.html" class="navbar-link">Boutique</a>
           </li>
-
-          <li>
-            <a href="#" class="navbar-link">Boutique</a>
-          </li>
+          
 
           <li>
             <a href="#" class="navbar-link">À propos</a>
@@ -132,7 +135,6 @@
 
 
 
-            <button class="btn btn-primary">Acheter maintenant</button>
 
           </div>
 
@@ -753,7 +755,7 @@
 
           </ul>
 
-          <button class="btn btn-outline">Voir tous les produit</button>
+          <a href="boutique.html" class="btn btn-outline">Voir tous les produits</a>
 
         </div>
       </section>
@@ -762,9 +764,7 @@
 
 
 
-      <!-- 
-        - #BLOG
-      -->
+    
 
       <section class="section blog">
         <div class="container">
@@ -1091,7 +1091,7 @@
       <div class="container">
 
         <p class="copyright">
-          &copy; 2022 </a>. All Rights Reserved
+          &copy; 2024 </a>. All Rights Reserved
         </p>
 
         <ul class="footer-bottom-list">
@@ -1125,21 +1125,15 @@
 
 
 
-  <!-- 
-    - custom js link
-  -->
   <script src="./assets/js/script.js"></script>
 
-  <!-- 
-    - ionicon link
-  -->
+ 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <div id="cartModal" class="cart-modal" style="display:none; position: fixed; right: 20px; top: 20px; background-color: white; pAjouter au paniering: 20px; border: 1px solid #ccc; z-index: 100;">
     <div class="cart-items"></div>
     <div class="cart-total">
       <p>Total: <span id="cartTotal">$0.00</span></p>
-      <!-- Updated checkout button to redirect to checkout.html -->
       <button onclick="window.location.href='checkout.html'">Checkout</button>
     </div>
     <button onclick="toggleCartModal()" style="margin-top: 10px;">Fermer le panier</button>
