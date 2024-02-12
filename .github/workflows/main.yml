@@ -22,8 +22,9 @@ jobs:
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         target_branch: gh-pages 
-        cdn: pages  
-        content: ./project e-comm
+        cdn: pages
+        content: ./project\ e-comm  
+
 
 
     
