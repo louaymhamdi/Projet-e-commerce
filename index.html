@@ -1,0 +1,1135 @@
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>project e-comm</title>
+ 
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER 
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <div class="header-search">
+        <input type="search" name="search" placeholder="Recherche..." class="input-field">
+
+        <button class="search-btn" aria-label="Search">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      </div>
+
+   
+      <div class="header-actions">
+
+        <button class="header-action-btn">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+          <p class="header-action-label">Se connecter
+        </button>
+
+        <button class="header-action-btn">
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+
+          <p class="header-action-label">Rechercher/p>
+        </button>
+
+        <button class="header-action-btn" onclick="toggleCartModal()">
+          <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+          <p class="header-action-label">Panier</p>
+          <div class="btn-badge green" aria-hidden="true"></div> 
+        
+
+        <button class="header-action-btn">
+          <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+
+          <p class="header-action-label">Wishlisht</p>
+
+          <div class="btn-badge" aria-hidden="true">2</div>
+        </button>
+
+      </div>
+
+      <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" alt=" logo" width="130" height="31">
+          </a>
+
+          <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <ul class="navbar-list">
+
+          <section id="home">
+            <li>
+              <a href="#home" class="navbar-link">Accueil</a>
+            </li>
+                      </section>
+          
+          <li>
+            <a href="boutique.html" class="navbar-link">Boutique</a>
+          </li>
+          
+
+          <li>
+            <a href="#" class="navbar-link">À propos</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="navbar-link">Blog</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home" style="background-image: url('./assets/images/herro-banner.png')">
+        <div class="container">
+
+          <div class="hero-content">
+
+
+
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="service">
+        <div class="container">
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-item-icon">
+                <img src="./assets/images/service-icon-1.svg" alt="Service icon">
+              </div>
+
+              <div class="service-content">
+                <p class="service-item-title">Livraison gratuite</p>
+
+                <p class="service-item-text">Sur toute commande de plus de 599 $</p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-item-icon">
+                <img src="./assets/images/service-icon-2.svg" alt="Service icon">
+              </div>
+
+              <div class="service-content">
+                <p class="service-item-title">Retours faciles</p>
+
+                <p class="service-item-text">Politique de retour de 30 jours</p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-item-icon">
+                <img src="./assets/images/service-icon-3.svg" alt="Service icon">
+              </div>
+
+              <div class="service-content">
+                <p class="service-item-title">Paiement sécurisé</p>
+
+                <p class="service-item-text">Garantie 100% sécurisée</p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-item-icon">
+                <img src="./assets/images/service-icon-4.svg" alt="Service icon">
+              </div>
+
+              <div class="service-content">
+                <p class="service-item-title">Support spécial</p>
+
+                <p class="service-item-text">Support dédié 24/7t</p>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CATEGORY
+      -->
+
+      <section class="section category">
+        <div class="container">
+
+          <ul class="category-list">
+
+            <li class="category-item">
+              <figure class="category-banner">
+                <img src="./assets/images/best-seller1.jpg" alt="" loading="lazy" width="510" height="600"
+                  class="w-100">
+              </figure>
+
+              <a href="#" class="btn btn-secondary">Anneau</a>
+            </li>
+
+            <li class="category-item">
+              <figure class="category-banner">
+                <img src="./assets/images/best-seller2.jpg" alt=" " loading="lazy" width="510" height="600"
+                  class="w-100">
+              </figure>
+
+              <a href="#" class="btn btn-secondary">Bracelet</a>
+            </li>
+
+            <li class="category-item">
+              <figure class="category-banner">
+                <img src="./assets/images/best-seller3.jpg" alt=" " loading="lazy" width="510" height="600"
+                  class="w-100">
+              </figure>
+              <a href="#" class="btn btn-secondary">boucles d'oreilles</a>
+
+            </li>
+
+            <li class="category-item">
+              <figure class="category-banner">
+                <img src="./assets/images/bj1.jpg" alt=" " loading="lazy" class="w-100">
+              </figure>
+
+              <a href="#" class="btn btn-secondary">Collier</a>
+            </li>
+
+            <li class="category-item">
+              <figure class="category-banner">
+                <img src="./assets/images/bj2.jpg" alt="" loading="lazy" width="510" height="600"
+                  class="w-100">
+              </figure>
+
+              <a href="#" class="btn btn-secondary">Cadeau</a>
+            </li>
+
+         
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PRODUCT
+      -->
+
+      <section class="section product">
+        <div class="container">
+
+          <h2 class="h2 section-title">Produits de la semaine</h2>
+
+          <ul class="filter-list">
+
+            <li>
+              <button class="filter-btn  active">Meilleures ventes</button>
+            </li>
+
+         
+            <li>
+              <button class="filter-btn">Tendance</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Nouvelle arrivéel</button>
+            </li>
+
+          </ul>
+
+          <ul class="product-list">
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/bj4.jpg" alt="  " loading="lazy" width="800"
+                      height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-badge red"> -25%</div>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    
+
+                    
+                    <button class="card-action-btn cart-btn" onclick="addToCart({ id: '1', name: 'bla bla', price: 48.75 })">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      <p>Ajouter au panier</p>
+                    </button>
+                    
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#"></a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="48.75">&pound;48.75</data>
+
+                    <data value="65.00">&pound;65.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/best-seller3.jpg" alt="" loading="lazy" width="800"
+                      height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-badge green"> New</div>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name=""></ion-icon>
+                    </button>
+
+                    <button class="card-action-btn cart-btn" onclick="addToCart({ id: '2', name: 'bla yo', price: 48.75 })">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                      <p>Ajouter au panier</p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Ajouter au panier to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#"></a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="62.00">&pound;62.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/bj2.jpg" alt=" loading="lazy"
+                      width="800" height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name=""></ion-icon>
+                    </button>
+
+                    <button class="card-action-btn cart-btn" onclick="addToCart({ id: '3', name: 'bla yo', price: 48.75 })">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                      <p>Ajouter au panier</p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Ajouter au panier to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#"></a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="32.00">&pound;32.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/best-seller2.jpg" alt="" loading="lazy" width="800"
+                      height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-action-btn cart-btn" onclick="addToCart({ id: '4', name: 'bla yo', price: 48.75 })">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                      <p>Ajouter au panier </p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Ajouter au panier to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#"></a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="84.00">&pound;84.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/best-seller1.jpg" alt="" loading="lazy" width="800"
+                      height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-action-btn cart-btn" onclick="addToCart({ id: '5', name: 'bla yo', price: 48.75 })">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                      <p>Ajouter au panier </p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Ajouter au panier to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#"></a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="45.00">&pound;45.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/bj3.jpg" alt=" " loading="lazy" width="800"
+                      height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-action-btn cart-btn" onclick="addToCart({ id: '6', name: 'bla yo', price: 48.75 })">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                      <p>Ajouter au panier</p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Ajouter au panier to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#"> </a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="30.00">&pound;30.00</data>
+
+                    <data value="38.00">&pound;38.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/bj1.jpg" alt="" loading="lazy" width="800"
+                      height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-action-btn cart-btn" onclick="addToCart({ id: '7', name: 'bla yo', price: 48.75 })">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                      <p>Ajouter au panier>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Ajouter au panier to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#">/a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="25.00">&pound;25.00</data>
+
+                    <data value="39.00">&pound;39.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/best-seller2.jpg" alt="" loading="lazy" width="800"
+                      height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-action-btn cart-btn" onclick="addToCart({ id: '8', name: 'bla yo', price: 48.75 })">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                      <p>Ajouter au panier</p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Ajouter au panier to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#"></a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="85.00">&pound;85.00</data>
+
+                    <data value="99.00">&pound;99.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/best-seller3.jpg" alt="" loading="lazy" width="800"
+                      height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-action-btn cart-btn" onclick="addToCart({ id: '9', name: 'bla yo', price: 48.75 })">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                      <p>Ajouter au panier </p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Ajouter au panier to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#"></a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="32.00">&pound;32.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/bj2.jpg" alt="" loading="lazy" width="800"
+                      height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-badge green">New</div>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-action-btn cart-btn" onclick="addToCart({ id: '10', name: 'bla yo', price: 48.75 })">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                      <p>Ajouter au panier </p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Ajouter au panier to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#"></a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="71.00">&pound;71.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <a href="boutique.html" class="btn btn-outline">Voir tous les produits</a>
+
+        </div>
+      </section>
+
+
+
+
+
+    
+
+      <section class="section blog">
+        <div class="container">
+
+          <h2 class="h2 section-title">Dernières nouvelles de mode</h2>
+
+          <ul class="blog-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="./assets/images/bj4.jpg" alt=" " loading="lazy"
+                      width="1020" height="700" class="w-100">
+                  </a>
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-open-outline"></ion-icon>
+
+                      <a href="#" class="card-meta-link">Fashion</a>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <a href="#" class="card-meta-link">
+                        <time datetime="2024-02-10">10/02/2024</time>
+                      </a>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">les Tendance de l'hiver 2024   </a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="./assets/images/best-seller3.jpg" alt=" I’ve Recently Ordered"
+                      loading="lazy" width="1020" height="700" class="w-100">
+                  </a>
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-open-outline"></ion-icon>
+
+                      <a href="#" class="card-meta-link">Fashion</a>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <a href="#" class="card-meta-link">
+                        <time datetime="2024-02-10">10/02/2024</time>
+                      </a>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">les Tendance de l'hiver 2024 </a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="./assets/images/bj3.jpg" alt=""
+                      loading="lazy" width="1020" height="700" class="w-100">
+                  </a>
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-open-outline"></ion-icon>
+
+                      <a href="#" class="card-meta-link">Fashion</a>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <a href="#" class="card-meta-link">
+                        <time datetime="2024-02-10">10/02/2024</time>
+                      </a>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">les Tendance de l'hiver 2024  </a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #NEWSLETTER
+      -->
+
+      <section class="section newsletter">
+        <div class="container">
+
+          <div class="newsletter-card" style="background-image: url('./assets/images/newsletter-bg.png')">
+
+            <h2 class="card-title">S'abonner à la Newsletter</h2>
+
+            <p class="card-text">
+              Entrez votre email ci-dessous pour être le premier à connaître les nouvelles collections et les lancements de produits.            </p>
+
+            <form action="" class="card-form">
+
+              <div class="input-wrapper">
+                <ion-icon name="mail-outline"></ion-icon>
+
+                <input type="email" name="emal" placeholder="Enter your email" required class="input-field">
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100">
+                <span>Subscribe</span>
+
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </button>
+
+            </form>
+
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          
+
+          <p class="footer-text">
+            description du site et buiss
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Information</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Expédition</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Retours et échanges</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Garantie</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Déclaration d'accessibilité</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">FAQ</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Nous contacter</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Magasins et services</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Magasins</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link"> Studio de piercing</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Nominations au stylisme</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link"></a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link"></a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Ressources</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Entretien des bijoux</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Anneau Sizer</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Piquetage de soins post-soins</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Édition de style</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Code de conduite des fournisseurs</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link"></a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 </a>. All Rights Reserved
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link">politique de confidentialité</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">termes et conditions</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Plan du site
+          </li>
+
+        </ul>
+
+        <div class="payment">
+          <p class="payment-title">Nous soutenons</p>
+
+          <img src="./assets/images/payment-img.png" alt="Online payment logos" class="payment-img">
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <script src="./assets/js/script.js"></script>
+
+ 
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <div id="cartModal" class="cart-modal" style="display:none; position: fixed; right: 20px; top: 20px; background-color: white; pAjouter au paniering: 20px; border: 1px solid #ccc; z-index: 100;">
+    <div class="cart-items"></div>
+    <div class="cart-total">
+      <p>Total: <span id="cartTotal">$0.00</span></p>
+      <button onclick="window.location.href='checkout.html'">Checkout</button>
+    </div>
+    <button onclick="toggleCartModal()" style="margin-top: 10px;">Fermer le panier</button>
+</div>
+
+  <script src="./assets/js/cart.js"></script>
+  
+
+</body>
+
+</html>
