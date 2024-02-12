@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "project e-comm",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
