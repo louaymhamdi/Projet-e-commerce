@@ -5,10 +5,9 @@ on:
     branches:
       - main
 
-permissions: 
+permissions:  
   contents: write  
-
-  
+  id-token: write
 
 jobs:
   build:
@@ -21,12 +20,11 @@ jobs:
     - name: Publish to GitHub Pages
       uses: actions/deploy-pages@v1
       with:
-       
-        
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        target_branch: gh-pages  
+        target_branch: gh-pages 
         cdn: pages  
         content: .  
+
 
     
   
