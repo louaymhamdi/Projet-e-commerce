@@ -16,5 +16,5 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3  
       with:
-        github_token: ${{ secrets.WORKFLOW_TOKEN }}  
+        github_token: ${{ secrets.TOKEN_WORKFLOW}}  
         publish_dir: ./project\ e-comm 
