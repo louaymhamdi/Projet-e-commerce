@@ -14,7 +14,7 @@ jobs:
       - run: npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          repoToken: '${{ secrets.TOKEN_WORKFLOW }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PROJECT__E_COMMERCE }}'
           channelId: live
           projectId: project--e-commerce
