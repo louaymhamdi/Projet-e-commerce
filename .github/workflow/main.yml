@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
  
 jobs:
   build:
@@ -30,4 +33,8 @@ jobs:
       uses: actions/upload-release-asset@v1
       env:
         GITHUB_TOKEN: ${{ secrets.TOKEN_WORKFLOW }}
-      with:
+      with: 
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: # Path to your release asset, e.g., "dist/myapp.zip"
+        asset_name: # Name of the release asset, e.g., "myapp.zip"
+        asset_content_type: # Content type of the release asset, e.g., "application/zip"
