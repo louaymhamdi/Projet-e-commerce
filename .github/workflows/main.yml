@@ -12,25 +12,10 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Create Release
-      if: success()
-      id: create_release
-      uses: actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.TOKEN_WORKFLOW }}
-      with:
-        tag_name: v${{ github.run_number }}
-        release_name: Release ${{ github.run_number }}
-        draft: false
-        prerelease: false
-
-    - name: Publish Release
-      if: success()
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.TOKEN_WORKFLOW }}
-      with: 
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: . 
-        asset_name: projet.zip
-        asset_content_type: application/zip
+    
+    - name: Release
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: | 
+          zip -r release.zip $(find . -type f -not -path '*/\.*')
+          gh release create v${{ github.run_number }} release.zip -t "v${{ github.run_number }}" -n "Release v${{ github.run_number }}"
