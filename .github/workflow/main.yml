@@ -1,0 +1,22 @@
+name: HTML/CSS CI/CD
+
+on:
+  push:
+    branches:
+      - main
+ 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Publish to GitHub Pages
+        uses: actions/deploy-pages@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          target_branch: gh-pages  # Deploy to the 'gh-pages' branch
+          cdn: pages  # Use GitHub Pages CDN
+          content: ./project e-comm  # Depl
