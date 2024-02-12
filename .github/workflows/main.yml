@@ -11,11 +11,12 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-
+    - name: Publish to GitHub Pages
+      uses: actions/deploy-pages@v1
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        target_branch: gh-pages  # Deploy to the 'gh-pages' branch
+        cdn: pages  # Use GitHub Pages CDN
+        content: .  # Deploy all files from the root directory
     
-    - name: Release
-      env: 
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: | 
-        zip -r release.zip *
-        gh release create v${{ github.run_number }} release.zip -t "v${{ github.run_number }}" -n "Release v${{ github.run_number }}"
+  
