@@ -4,10 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
- 
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -35,6 +31,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.TOKEN_WORKFLOW }}
       with: 
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: # Path to your release asset, e.g., "dist/myapp.zip"
-        asset_name: # Name of the release asset, e.g., "myapp.zip"
-        asset_content_type: # Content type of the release asset, e.g., "application/zip"
+        asset_path: . 
+        asset_name: projet.zip
+        asset_content_type: application/zip
