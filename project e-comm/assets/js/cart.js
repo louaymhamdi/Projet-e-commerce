@@ -23,14 +23,15 @@ function updateCartUI() {
   });
   document.getElementById('cartTotal').innerText = `$${total.toFixed(2)}`;
   localStorage.setItem('cart', JSON.stringify(cart));
+  localStorage.setItem('total', total.toFixed(2)); 
 }
+
 
 function toggleCartModal() {
   const cartModal = document.getElementById('cartModal');
   cartModal.style.display = cartModal.style.display === 'block' ? 'none' : 'block';
 }
 
-// Placeholder for checkout function
 function checkout() {
   alert('Checkout not implemented.');
 }

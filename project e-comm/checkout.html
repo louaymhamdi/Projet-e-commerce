@@ -21,21 +21,29 @@
 
     <title>Page de paiement</title>
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-          console.log('Page loaded');
-          const totalCostSpan = document.querySelector('.total-area .total-cost');
-          console.log('Total Cost Span:', totalCostSpan);
-        
-          const total = localStorage.getItem('total');
-          console.log('Total from localStorage:', total);
-        
-          if (totalCostSpan && total !== null) {
-            totalCostSpan.textContent = `$${total}`;
-            console.log('Total cost updated to:', totalCostSpan.textContent);
-          } else {
-            console.log('Total cost not updated:', 'Element or total missing');
-          }
-        });
+   document.addEventListener('DOMContentLoaded', () => {
+  const cart = JSON.parse(localStorage.getItem('cart')) || [];
+  const totalCostSpan = document.querySelector('.total-area .total-cost');
+  const itemsContainer = document.querySelector('.cart-section'); 
+
+  let total = localStorage.getItem('total');
+  if (totalCostSpan && total !== null) {
+    totalCostSpan.textContent = `$${total}`;
+  }
+
+  cart.forEach(item => {
+    const itemElement = document.createElement('div');
+    itemElement.classList.add('item'); 
+    itemElement.innerHTML = `
+      <div class="name-price">${item.name}: $${item.price} x ${item.quantity}</div>
+      <div class="add-reduce-item">
+        <span class="reduce">-</span>
+        <span class="num">${item.quantity}</span>
+        <span class="add">+</span>
+      </div>`;
+    itemsContainer.appendChild(itemElement);
+  });
+});
         </script>
         
         
@@ -402,32 +410,15 @@
         </section>
         <section class="cart-section">
           <div class="item">
-            
-            <div class="item-info">
-              <div class="name-price">
-              </div>
-              <div class="add-reduce-item">
-                <span class="reduce">-</span>
-                <span class="num">1</span>
-                <span class="add">+</span>
-              </div>
-            </div>
           </div>
           <div class="item">
             <div class="item-info">
               <div class="name-price">
               </div>
-              <div class="add-reduce-item">
-                <span class="reduce">-</span>
-                <span class="num">1</span>
-                <span class="add">+</span>
-              </div>
+             
             </div>
           </div>
           <div class="shipping-total">
-            <div class="shipping-area">
-              <p class="shipping">Shipping</p>
-              <span class="shipping-cost">$</span>
             </div>
             <div class="total-area">
               <p class="total">Total</p>
