@@ -14,8 +14,8 @@ jobs:
 
     
     - name: Release
-        env: 
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: | 
-          zip -r release.zip $(find . -type f -not -path '*/\.*')
-          gh release create v${{ github.run_number }} release.zip -t "v${{ github.run_number }}" -n "Release v${{ github.run_number }}"
+      env: 
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: | 
+        zip -r release.zip $(find . -type f -not -path '*/\.*')
+        gh release create v${{ github.run_number }} release.zip -t "v${{ github.run_number }}" -n "Release v${{ github.run_number }}"
