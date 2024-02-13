@@ -19,7 +19,7 @@
 
     <link rel="stylesheet" href="./assets/css/checkout.css" />
 
-    <title>Page de paiement</title>
+    <title>checkout</title>
     <script>
    document.addEventListener('DOMContentLoaded', () => {
   const cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -404,8 +404,9 @@
               </div>
             </div>
             <div class="btn-area">
-              <button>valider</button>
-            </div>
+              <a href="payement.html" class="validate-btn">Valider</a>
+          </div>
+          
           </form>
         </section>
         <section class="cart-section">
