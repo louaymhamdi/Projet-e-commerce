@@ -28,14 +28,14 @@
 
   let total = localStorage.getItem('total');
   if (totalCostSpan && total !== null) {
-    totalCostSpan.textContent = `$${total}`;
+    totalCostSpan.textContent = `€${total}`;
   }
 
   cart.forEach(item => {
     const itemElement = document.createElement('div');
     itemElement.classList.add('item'); 
     itemElement.innerHTML = `
-      <div class="name-price">${item.name}: $${item.price} x ${item.quantity}</div>
+      <div class="name-price">${item.name}: €${item.price} x ${item.quantity}</div>
       <div class="add-reduce-item">
         <span class="reduce">-</span>
         <span class="num">${item.quantity}</span>
