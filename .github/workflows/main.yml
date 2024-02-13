@@ -1,21 +1,20 @@
-name: HTML/CSS CI/CD
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
-      - main
+      - main  
+
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  deploy:
+    runs-on: ubuntu-latest  
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v2  
 
-    
-    - name: Release
-      env: 
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: | 
-        zip -r release.zip *
-        gh release create v${{ github.run_number }} release.zip -t "v${{ github.run_number }}" -n "Release v${{ github.run_number }}"
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3  
+      with:
+        github_token: ${{ secrets.TOKEN_WORKFLOW}}  
+        publish_dir: ./project\ e-comm 
