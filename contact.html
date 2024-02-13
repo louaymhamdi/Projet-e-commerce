@@ -1,0 +1,329 @@
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>project e-comm</title>
+ 
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <div class="header-search">
+        <input type="search" name="search" placeholder="Recherche..." class="input-field">
+
+        <button class="search-btn" aria-label="Search">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      </div>
+
+   
+      <div class="header-actions">
+
+        <button class="header-action-btn">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+          <p class="header-action-label">Se connecter
+        </button>
+
+        <button class="header-action-btn">
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+
+          <p class="header-action-label">Rechercher/p>
+        </button>
+
+        <button class="header-action-btn" onclick="toggleCartModal()">
+          <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+          <p class="header-action-label">Panier</p>
+          <div class="btn-badge green" aria-hidden="true"></div> 
+        
+
+        <button class="header-action-btn">
+          <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+
+          <p class="header-action-label">Wishlisht</p>
+
+          <div class="btn-badge" aria-hidden="true">2</div>
+        </button>
+
+      </div>
+
+      <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" alt=" logo" width="130" height="31">
+          </a>
+
+          <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <ul class="navbar-list">
+
+          <section id="home">
+            <li>
+              <a href="index.html" class="navbar-link">Accueil</a>
+            </li>
+                      </section>
+          
+          <li>
+            <a href="boutique.html" class="navbar-link">Boutique</a>
+          </li>
+          
+
+          <li>
+            <a href="#" class="navbar-link">À propos</a>
+          </li>
+
+          <li>
+            <a href="blog.html" class="navbar-link">Blog</a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+  </header>
+
+  <div class="contact-parent-container">
+    <div class="contact-container">
+      <h1>Contactez-nous</h1>
+      <form id="contact-form">
+        <div class="contact-form-group">
+          <label for="Nom">Nom</label>
+          <input type="text" id="Nom" name="Nom" required>
+        </div>
+        <div class="contact-form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="contact-form-group">
+          <label for="message">Message</label>
+          <textarea class="contact-textarea" id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button class="contact-button" type="submit">Envoyer</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          
+
+          <p class="footer-text">
+            description du site et buiss
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Information</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Expédition</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Retours et échanges</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Garantie</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Déclaration d'accessibilité</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">FAQ</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Nous contacter</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Magasins et services</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Magasins</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link"> Studio de piercing</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Nominations au stylisme</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link"></a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link"></a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Ressources</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Entretien des bijoux</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Anneau Sizer</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Piquetage de soins post-soins</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Édition de style</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Code de conduite des fournisseurs</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link"></a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 </a>. All Rights Reserved
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link">politique de confidentialité</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">termes et conditions</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Plan du site
+          </li>
+
+        </ul>
+
+        <div class="payment">
+          <p class="payment-title">Nous soutenons</p>
+
+          <img src="./assets/images/payment-img.png" alt="Online payment logos" class="payment-img">
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <div id="cartModal" class="cart-modal" style="display:none; position: fixed; right: 20px; top: 20px; background-color: white; pAjouter au paniering: 20px; border: 1px solid #ccc; z-index: 100;">
+    <div class="cart-items"></div>
+    <div class="cart-total">
+      <p>Total: <span id="cartTotal">$0.00</span></p>
+      <button onclick="window.location.href='checkout.html'">Checkout</button>
+    </div>
+    <button onclick="toggleCartModal()" style="margin-top: 10px;">Fermer le panier</button>
+</div>
+
+  <script src="./assets/js/cart.js"></script>
+</body>
