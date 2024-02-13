@@ -669,7 +669,88 @@ h3 > a { color: inherit; }
 
 .newsletter-card .btn { gap: 10px; }
 
+/* Start Style Blog */
 
+.main-blog {
+  margin-top: 100px;
+}
+
+.accordion-item {
+  margin-bottom: 20px;
+}
+
+.accordion-input {
+  display: none;
+  padding: 1.5%;
+}
+
+.accordion-title {
+  background-color: #e0c0c0;
+  color: #2b2525;
+  padding: 10px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 1.5%;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px;
+  padding: 1.5%;
+}
+
+.accordion-input:checked + .accordion-title + .accordion-content {
+  display: block;
+}
+
+
+/* End Style Blog */
+/* Start Contact CSS */
+.contact-parent-container {
+  max-width: auto;
+  background-image: url('../images/contact.jpg');
+  background-size:     cover;
+  background-repeat:   no-repeat;
+}
+.contact-container {
+  max-width: 600px;
+  color: #fff;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact-form-group {
+  margin-bottom: 20px;
+}
+
+.contact-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+.contact-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  background-color: #0056b3;
+}
+/* End Contact CSS */
 
 
 
@@ -1128,3 +1209,4 @@ h3 > a { color: inherit; }
   .footer-bottom .container { justify-content: space-between; }
 
 }
+

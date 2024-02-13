@@ -25,3 +25,20 @@ window.addEventListener("scroll", function () {
   window.scrollY >= 200 ? header.classList.add("active")
     : header.classList.remove("active");
 })
+
+
+// Contact JS
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  var Nom = document.getElementById('Nom').value;
+  var email = document.getElementById('email').value;
+  var message = document.getElementById('message').value;
+  
+  console.log('Nom:', Nom);
+  console.log('Email:', email);
+  console.log('Message:', message);
+  
+  alert('Votre message a été envoyé Mr/Mme ' + Nom +' !');
+  document.getElementById('contact-form').reset();
+});
