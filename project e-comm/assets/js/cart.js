@@ -22,11 +22,11 @@ function updateCartUI() {
   let total = 0;
   cart.forEach(item => {
     const productElement = document.createElement('div');
-    productElement.innerText = `${item.name}: $${item.price} x ${item.quantity}`;
+    productElement.innerText = `${item.name}: €${item.price} x ${item.quantity}`;
     cartItemsContainer.appendChild(productElement);
     total += item.price * item.quantity;
   });
-  document.getElementById('cartTotal').innerText = `$${total.toFixed(2)}`;
+  document.getElementById('cartTotal').innerText = `€${total.toFixed(2)}`;
   localStorage.setItem('cart', JSON.stringify(cart));
   localStorage.setItem('total', total.toFixed(2)); 
 }
