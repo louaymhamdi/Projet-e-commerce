@@ -698,4 +698,19 @@ button {
     font-size: 0.8rem;
     font-weight: 600;
   }
+}.validate-btn {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; 
+}
+
+.validate-btn:hover {
+  background-color: #45a049;
 }
